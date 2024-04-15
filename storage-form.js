@@ -18,7 +18,7 @@ class StorageForm extends HTMLElement {
   }
 
   updateForm(form) {
-    for (const input of form.elements) {
+    this.getNamedInputs(form).forEach((input) => {
       const storedValue = window.localStorage[input.name];
       if (!storedValue) return;
       switch (input.type) {
@@ -31,7 +31,7 @@ class StorageForm extends HTMLElement {
         default:
           input.value = storedValue;
       }
-    }
+    });
   }
 
   updateStorage(data) {
@@ -46,6 +46,10 @@ class StorageForm extends HTMLElement {
 
   get forms() {
     return this.querySelectorAll("form");
+  }
+
+  getNamedInputs(form) {
+    return form.querySelectorAll("[name]");
   }
 
   getSubmitter(form) {
