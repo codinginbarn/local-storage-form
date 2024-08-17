@@ -1,8 +1,8 @@
-# `storage-form`
+# `Local Storage Form`
 
 A Web Component that allows you to submit data to local storage.
 
-**[Demo](https://daviddarnes.github.io/storage-form/demo.html)** | **[Further reading](https://darn.es/storage-form-web-component/)**
+**[Demo](https://codinginbarn.github.io/local-storage-form/demo.html)** | **[Further reading](https://discountplr.com)**
 
 ## Examples
 
@@ -94,7 +94,7 @@ This Web Component allows you to:
 You have a few options (choose one of these):
 
 1. Install via [npm](https://www.npmjs.com/package/@daviddarnes/storage-form): `npm install @daviddarnes/storage-form`
-1. [Download the source manually from GitHub](https://github.com/daviddarnes/storage-form/releases) into your project.
+1. [Download the source manually from GitHub](https://codinginbarn.github.io/local-storage-form/releases) into your project.
 1. Skip this step and use the script directly via a 3rd party CDN (not recommended for production use)
 
 ### Usage
